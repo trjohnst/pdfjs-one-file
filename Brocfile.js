@@ -29,7 +29,8 @@ const minTree = concat(
     sourceMapConfig: { enabled: false }
   }
 );
+const srcTree = new Funnel('src');
 
-const tree = new MergeTrees([ unminTree, minTree ]);
+const tree = new MergeTrees([ srcTree, unminTree, minTree ]);
 
 module.exports = tree;
