@@ -1,0 +1,24 @@
+{
+  "name": "pdfjs-concatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Brocfile.js",
+  "dependencies": {
+    "broccoli": "^1.1.4",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-concat": "^3.2.2",
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^2.0.0",
+    "broccoli-stew": "^1.5.0",
+    "pdfjs-dist": "^2.0.334"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run clean && npm run build",
+    "build": "broccoli build dist",
+    "clean": "rm -fr ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
